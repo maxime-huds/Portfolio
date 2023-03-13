@@ -15,8 +15,10 @@ var images = [
   // Fonction pour créer et afficher une image flottante
   function createFloatingImage() {
     var img = document.createElement("img");
+    img.classList.add('code-secret')
     img.src = getRandomImage();
     img.style.position = "fixed";
+    img.style.zIndex = "1";
     img.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
     img.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
     img.style.opacity = "0.7";
