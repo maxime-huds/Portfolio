@@ -1,0 +1,774 @@
+@font-face {
+    font-family: 'ZenDots';
+    src: url('assets/Polices/Zen\ Dots/ZenDots-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('assets/Polices/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('assets/Polices/Barlow\ Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url('assets/Polices/century-gothic/CenturyGothic.ttf') format('truetype');
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*------------------------------/*
+/*Nav bar cachée*/
+
+
+
+
+.nav-bar-cache{
+    overflow: hidden;
+    transition: 0.3s;
+    height: 10%;
+    margin-top: -200px;
+    position: fixed;
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(24, 43, 95);
+    align-items: center;
+    z-index: 2;
+}
+
+.nav-bar-cache ul{
+    padding-right: 2%;
+}
+
+.nav-bar-cache ul a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar-cache ul a:visited{
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar-cache ul a:hover{
+    color: rgb(255, 142, 36);
+}
+
+.nav-bar-cache ul a:active{
+    color: rgb(255, 142, 36);
+}
+
+
+
+/* ----- ICI c'est le header du haut de la page -----*/
+
+.header-top p{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header-top{
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    display: flex;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.486);
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+.header-top ul{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 30px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.header-top ul a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.header-top ul a:visited{
+    color: black;
+}
+
+.header-top ul a:hover{
+    color: rgb(255, 142, 36);
+}
+
+.header-top ul a:active{
+    color: rgb(255, 142, 36);
+}
+
+.headerAgauche{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titre-site{
+    margin-left: 1%;
+}
+
+.headerAgauche .img-Mail{
+    height: 50px;
+    width: 50px;
+}
+
+.headerAgauche .img-Tel{
+    height: 50px;
+    width: 55px;
+}
+
+/* ----- FIN du header du haut de la page ----- */
+/*----------------------------------------------*/
+
+
+/*ICI c'est le haut de la page en entier */
+
+
+.top-page{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(assets/images/DALL·E\ 2022-11-21\ 15.14.01\ -\ a\ big\ gold\ palace\ with\ a\ bleue\ rising\ sun\,\ digital\ art.png);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.titre-milieu .titre{
+    color: rgb(0, 0, 0);
+    font-family: 'Century-Gothic';
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 15%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.titre-milieu .sous-titre{
+    color: rgb(0, 0, 0);
+    font-family: 'Century-Gothic';
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*-------------------------------------------------------/*
+/* ICI c'est la page a propos de moi*/
+
+#a-propos{
+    padding-top: 8%;
+}
+
+
+.a-propos{
+    padding-top: 45px;
+}
+
+
+#projets {
+    margin-top: 10%;
+    padding: 0;
+}
+
+
+.a-propos h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+.a-propos ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+.a-propos .petit-trait{
+    margin: 0%;
+    padding-bottom: 10%;
+    height: 60px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.a-propos .titre{
+    font-family: 'Century-Gothic';
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+
+
+.texte-a-propos1{
+    margin-top: 5%;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    padding: 0%;
+}
+
+.texte-a-propos1 p{
+    text-align: center;
+    font-family: 'Century-Gothic';
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+
+.image img{
+    width: 70%;
+    padding: 0;
+}
+
+.texte-a-propos2{
+
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding: 0%;
+}
+
+.texte-a-propos2 p{
+    margin-left: 20%;
+    text-align: center;
+    font-family: 'Century-Gothic';
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+.texte-a-propos2 .img2 img{
+    width: 70%;
+    padding: 0;
+}
+
+
+.texte-projet{
+
+    margin-top:0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding: 0%;
+}
+
+.texte-projet p{
+    text-align: center;
+    font-family: 'Century-Gothic';
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+.texte-a-propos2 .img3 img{
+    width: 70%;
+    padding: 0;
+}
+
+
+.telechargements{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+a.bouton-pendu {
+padding: 10px 30px;
+background: rgb(24, 43, 95);
+color: #fff;
+-webkit-border-radius: 11px;
+-moz-border-radius: 11px;
+border-radius: 11px;
+}
+
+
+
+
+a.bouton-pendu:hover{
+background: rgb(255, 142, 36);
+color: black;
+}
+
+a.bouton-pendu:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+a.bouton-site {
+padding: 10px 30px;
+background: rgb(24, 43, 95);
+color: #fff;
+-webkit-border-radius: 11px;
+-moz-border-radius: 11px;
+border-radius: 11px;
+}
+
+
+a.bouton-site:hover {
+background: rgb(255, 142, 36);
+color: rgb(255, 255, 255);
+}
+
+a.bouton-site:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+
+/*  ICI Page sur mes compétences */
+/*-------------------------------*/
+/*----------------------------------------------*/
+/*ICI rond pgress */
+
+
+.skills{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.496);
+    font-family: 'Century-Gothic';
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.skills-rond{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-rond h3{
+    justify-content: center;
+}
+
+
+.wrapper-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    position: relative;
+}
+.progress-bar:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+}
+/*===== The CSS =====*/
+.progress-circle{
+    width: 70%;
+    height: 88%;
+    z-index: 1;
+}
+.progress-circle .track, .progress .fill{
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 3;
+    transform: rotate(90deg)translate(0px, -80px);
+}
+.progress-circle .track{
+    stroke: #20313e;
+}
+.progress-circle .fill {
+    stroke: rgb(255, 142, 36);
+    stroke-dasharray: 219.99078369140625;
+    stroke-dashoffset: -219.99078369140625;
+    transition: stroke-dashoffset 1s;
+}
+.progress-circle .value {
+    fill: rgb(255, 142, 36);
+    text-anchor: middle;
+}
+.progress-circle .text {
+    font-size: 12px;
+    fill: rgb(0, 0, 0);
+    text-anchor: middle;
+}
+
+
+.nom-ronds{
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+    font-family: 'Century-Gothic';
+    font-size: 30px;
+}
+
+
+.cv .texte{
+    margin-right: 5%;
+}
+
+
+
+.cv .mon-cv .bouton-cv {
+    padding: 10px 30px;
+    background: rgb(24, 43, 95);
+    color: #fff;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    }
+    
+    
+    
+    
+    .bouton-cv:hover{
+    background: rgb(255, 142, 36);
+    color: black;
+    }
+    
+    .bouton-cv:link{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    
+    .bouton-cv {
+    padding: 10px 30px;
+    background: rgb(24, 43, 95);
+    color: #fff;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    }
+    
+    
+    .bouton-cv:hover {
+    background: rgb(255, 142, 36);
+    color: rgb(255, 255, 255);
+    }
+    
+    .bouton-cv:link{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+
+
+a.bouton-site {
+    padding: 10px 30px;
+    background: rgb(24, 43, 95);
+    color: #fff;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    }
+    
+    
+    a.bouton-site:hover {
+    background: rgb(255, 142, 36);
+    color: rgb(255, 255, 255);
+    }
+    
+    a.bouton-site:link{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+        
+
+
+
+
+
+/* ------------------------------------------- */
+/* ICI les progress bar */
+
+
+.skills-barres h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+
+
+
+/*--------------------------------------*/
+/* ICI barre html*/
+
+
+.progress-html {
+    background: rgb(0, 0, 0);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 15px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.progress-html .progress-value {
+animation: load 3s normal forwards;
+box-shadow: 0 10px 40px -10px rgb(255, 255, 255);
+border-radius: 100px;
+background: rgb(255, 142, 36);
+height: 50%;
+width: 0;
+}
+
+@keyframes load {
+0% { width: 0; }
+100% { width: 70%; }
+}
+
+
+/*--------------------------------------*/
+/* ICI barre css*/
+
+.progress-css {
+    background: rgb(0, 0, 0);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 15px;
+    width: 100%;
+}
+
+.progress-css .progress-value {
+animation: load 3s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background:rgb(255, 142, 36);
+height: 50%;
+width: 0;
+}
+
+@keyframes load {
+0% { width: 0; }
+100% { width: 70%; }
+}
+
+
+
+/*---------------------------------------------------------*/
+/* ICI style pour la page nous contacter*/
+
+.contact{
+    font-family: 'Century-Gothic';
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.form-style {
+margin:10px auto;
+width: 400px;
+padding: 20px 12px 10px 20px;
+font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style td {
+padding: 0;
+display: block;
+list-style: none;
+margin: 10px 0 0 0;
+}
+
+.form-style label{
+margin:0 0 3px 0;
+padding:0px;
+display:block;
+font-weight: bold;
+}
+
+.form-style .required{
+color:red;
+}
+.form-style input[type=submit], .form-style input[type=reset]{
+background: #4eb5f1;
+padding: 8px 15px 8px 15px;
+border: none;
+color: #fff;
+}
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
+background: #4eb5f1;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+}
+.form-style .field-textarea{
+height: 100px;
+}
+.form-style input[type=text], 
+.form-style input[type=email],
+textarea{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+border:1px solid #BEBEBE;
+padding: 7px;
+margin:0px;
+-webkit-transition: all 0.30s ease-in-out;
+-moz-transition: all 0.30s ease-in-out;
+-ms-transition: all 0.30s ease-in-out;
+-o-transition: all 0.30s ease-in-out;
+outline: none;  
+}
+
+.form-style .long{
+width: 100%;
+}
+
+
+.form-style input[type=text]:focus, 
+.form-style input[type=email]:focus,
+.form-style textarea:focus{
+-moz-box-shadow: 0 0 8px #88D5E9;
+-webkit-box-shadow: 0 0 8px #88D5E9;
+box-shadow: 0 0 8px #88D5E9;
+border: 1px solid #88D5E9;
+}
+
+
+.error{
+color: #D8000C;
+background-color: #FFBABA;
+}
+
+
+
+
+/*----------------------------------------------*/
+/*ICI le footer*/
+
+footer{
+    text-decoration: none;
+    font-family: 'Century-Gothic';
+    padding-top: 20px;
+    background-color: #20313e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    margin-left: 10px;
+    font-family: 'Nunito';
+    color: white;
+}
+
+
+
+
+footer p{
+    text-align: center;
+    color: rgb(182, 182, 182);
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+
+footer .logos{
+    padding-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+footer .logos img{
+    padding-right: 30px;
+    height: 50px;
+}
+
+
+
+/*------------- SECRET ---------------
+*/
+
+
+
+
+.texte-a-propos1 a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+.texte-a-propos1 a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+.texte-a-propos1 a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+.texte-a-propos1 a:active {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
