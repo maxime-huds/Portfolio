@@ -1,7 +1,10 @@
 // Tableau des chemins d'accès des images
 var images = [
-    "assets/images/1.png",
-    "assets/images/0.png",
+    "assets/images/caractere1.png",
+    "assets/images/caractere2.png",
+    "assets/images/caractere3.png",
+    "assets/images/caractere4.png",
+    "assets/images/caractere5.png",
     
     // Ajouter d'autres chemins d'accès ici
   ];
@@ -26,7 +29,7 @@ var images = [
     img.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
     img.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
     img.style.opacity = "0.7";
-    img.style.width = getRandomSize(5,50) + "px";
+    img.style.width = getRandomSize(5,25) + "px";
     img.style.pointerEvents = "none";
     img.style.zIndex = "-1";
     document.body.appendChild(img);

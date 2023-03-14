@@ -15,7 +15,7 @@
                 $password = $_POST['password'];
 
                 // vérifier si le nom d'utilisateur et le mot de passe sont corrects
-                if($username == "admin" && $password == "password123"){
+                if($username == "max" && $password == "max"){
                     // rediriger l'utilisateur vers une autre page
                     header("Location: secret.html");
                     exit;
