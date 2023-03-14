@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'ZenDots';
+    src: url('assets/Polices/Zen\ Dots/ZenDots-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('assets/Polices/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('assets/Polices/Barlow\ Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url('assets/Polices/century-gothic/CenturyGothic.ttf') format('truetype');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    z-index: 0;
+    background-color: rgb(24, 43, 95);
+    margin: 0%;
+    padding: 0%;
+}
+
+/*------------------------------/*
+/*Nav bar cachée*/
+
+
+
+
+.nav-bar-cache{
+    overflow: hidden;
+    transition: 0.3s;
+    height: 10%;
+    margin-top: -200px;
+    position: fixed;
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(24, 43, 95);
+    align-items: center;
+    z-index: 2;
+}
+
+.nav-bar-cache ul{
+    padding-right: 2%;
+}
+
+.nav-bar-cache ul a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar-cache ul a:visited{
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar-cache ul a:hover{
+    color: rgb(255, 142, 36);
+}
+
+.nav-bar-cache ul a:active{
+    color: rgb(255, 142, 36);
+}
+
+
+
+/* ----- ICI c'est le header du haut de la page -----*/
+
+.header-top p{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header-top{
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    display: flex;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.486);
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+.header-top ul{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-right: 20px;
+}
+
+.header-top ul a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.header-top ul a:visited{
+    color: black;
+}
+
+.header-top ul a:hover{
+    color: rgb(255, 142, 36);
+}
+
+.header-top ul a:active{
+    color: rgb(255, 142, 36);
+}
+
+.headerAgauche{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titre-site{
+    margin-left: 1%;
+}
+
+.headerAgauche .img-Mail{
+    height: 50px;
+    width: 50px;
+}
+
+.headerAgauche .img-Tel{
+    height: 50px;
+    width: 55px;
+}
+
+/* ----- FIN du header du haut de la page ----- */
+/*----------------------------------------------*/
+
+
+/*----------------------------------------------*/
+/* ICI on a la page et le rectangle*/
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+
+.page .rectangle-blanc{
+    z-index: 1;
+    height: 100%;
+    width: 82%;
+    background-color: rgba(255, 255, 255, 0.27);
+}
+
+
+
+/*------------------------------------------------------------------*/
+/* ICI c'est le texte de présentation*/
+
+
+.texte-presente{
+    display: flex;
+    justify-content: center;
+}
+
+
+.texte-presente p{
+    margin-top: 5%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Century-Gothic';
+    color: white;
+    width: 85%;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/* ICI c'est le premier groupe d'image ou y'a la page de login*/
+
+
+.groupe-image1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.groupe-image1 h2{
+    margin-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Century-Gothic';
+    color: white;
+}
+
+.image1{
+    display: flex;
+    justify-content: center;
+}
+
+.image1 img{
+    width: 85%;
+    margin-bottom: 10%;
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+.groupe-image1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.groupe-image2 h2{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Century-Gothic';
+    color: white;
+}
+
+.groupe-image2 h3{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Century-Gothic';
+    color: white;
+}
+
+.image2{
+    display: flex;
+    justify-content: center;
+}
+
+.image2 img{
+    width: 85%;
+    margin-bottom: 10%;
+}
+
+.petit-texte{
+    display: flex;
+    justify-content: center;
+}
+
+
+.petit-texte h3{
+    width: 85%;
+    margin-bottom: 10%;
+}
+
+
+
+
+/*----------------------------------------------*/
+/*ICI le footer*/
+
+footer{
+    width: 100%;
+    font-family: 'Century-Gothic';
+    text-decoration: none;
+    padding-top: 20px;
+    background-color: #20313e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    margin-left: 10px;
+    font-family: 'Nunito';
+    color: white;
+}
+
+
+
+
+footer p{
+    text-align: center;
+    color: rgb(182, 182, 182);
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+
+footer .logos{
+    padding-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+footer .logos img{
+    padding-right: 30px;
+    height: 50px;
+}
