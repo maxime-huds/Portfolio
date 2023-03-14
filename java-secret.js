@@ -46,4 +46,6 @@ setTimeout(function() {
   document.querySelector('.glitch').style.display = 'none';
 }, 720);
 
+
+
   
