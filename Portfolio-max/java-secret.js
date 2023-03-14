@@ -11,6 +11,11 @@ var images = [
     var index = Math.floor(Math.random() * images.length);
     return images[index];
   }
+
+
+  function getRandomSize(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
   
   // Fonction pour créer et afficher une image flottante
   function createFloatingImage() {
@@ -18,14 +23,24 @@ var images = [
     img.classList.add('code-secret')
     img.src = getRandomImage();
     img.style.position = "fixed";
-    img.style.zIndex = "1";
     img.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
     img.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
     img.style.opacity = "0.7";
+    img.style.width = getRandomSize(5,50) + "px";
     img.style.pointerEvents = "none";
+    img.style.zIndex = "-1";
     document.body.appendChild(img);
   }
   
   // Appel de la fonction pour créer des images flottantes toutes les 3 secondes
   setInterval(createFloatingImage, 3000);
+
+
+
+
+// Cacher l'écran de chargement après 1,5 secondes
+setTimeout(function() {
+  document.querySelector('.glitch').style.display = 'none';
+}, 720);
+
   
