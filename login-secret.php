@@ -38,7 +38,6 @@
                         exit();
                     }
                     else{
-                        echo 'login ou mot de passe incorrect';
                     }
                 }
             }
@@ -48,9 +47,6 @@
                 <input type="password" placeholder="password" id="password" name="password">
                 <input type="submit" value="Sign In">
             </form>
-            <?php if(isset($error_message)){ ?>
-                <p><?php echo $error_message; ?></p>
-            <?php } ?>
         </div>
     </body>
 </html>
