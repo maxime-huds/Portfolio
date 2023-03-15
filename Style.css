@@ -18,6 +18,18 @@
     src: url('assets/Polices/century-gothic/CenturyGothic.ttf') format('truetype');
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #11ffef;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(24, 43, 95);
+    border-radius: 6px;
+}
+
+::webkit-scroll
+
 html{
     margin: 0;
     padding: 0;

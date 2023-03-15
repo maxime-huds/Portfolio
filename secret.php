@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="style-secret.css">
         <script src="java-secret.js" defer></script>
     </head>
-    <body onload="startTimer()">
+    <body onload="startTimer()"> 
+
+        
         <button><a href="index.html">Retour</a></button>
 
         <div class="compte-a-rebours">
@@ -46,5 +48,18 @@
   </body>
 </html>
 
+
+<?php
+/*
+session_start();
+
+if(!isset($_SESSION['ID'])) {
+  header("Location: login-secret.php");
+  exit();
+}
+
+// Code pour afficher le contenu de la page pour les utilisateurs connectés
+*/
+?>
 
 

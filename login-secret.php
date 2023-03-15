@@ -9,12 +9,14 @@
     <body>
         <div class="login">
             <?php
+            
             try{
-                    $pdo=(new PDO('mysql:host=localhost;charset=utf8;dbname=logs'));
+                    $pdo=(new PDO('mysql:host=localhost;charset=utf8;dbname=logs','root',''));
                 }
             catch (Exception $e){
                 die ("erreur : ".$e->getMessage());
             }
+            
             if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // récupérer les valeurs du formulaire
                 $username = $_POST['username'];
@@ -22,13 +24,22 @@
 
                 // vérifier si le nom d'utilisateur et le mot de passe sont corrects
                 
-                if($username == "max" && $password == "max"){
-                    // rediriger l'utilisateur vers une autre page
-                    header("Location: secret.html");
-                    exit;
-                } else {
-                    // afficher un message d'erreur si les informations de connexion sont incorrectes
-                    $error_message = "Nom d'utilisateur ou mot de passe incorrect";
+                if (isset($username) && isset($password)){
+                    $sql=("SELECT * FROM infos WHERE login='$username' AND mdp='$password'");
+                    session_start();
+                    $account= $pdo->prepare($sql);
+                    $account->execute();
+                    $acc=$account->fetchAll();
+                
+                    $nbr_lignes=count($acc);
+                    if ($nbr_lignes==1){
+                        foreach($acc as $a)
+                        header('Location: secret.php');
+                        exit();
+                    }
+                    else{
+                        echo 'login ou mot de passe incorrect';
+                    }
                 }
             }
             ?>
