@@ -9,16 +9,19 @@
     <body>
         <div class="login">
             <?php
+            try{
+                    $pdo=(new PDO('mysql:host=localhost;charset=utf8;dbname=logs'));
+                }
+            catch (Exception $e){
+                die ("erreur : ".$e->getMessage());
+            }
             if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // récupérer les valeurs du formulaire
                 $username = $_POST['username'];
                 $password = $_POST['password'];
 
                 // vérifier si le nom d'utilisateur et le mot de passe sont corrects
-                try{
-                    $pdo=(new PDO('mysql:host=localhost;charset=utf8;dbname=portfolio'));
-                    if($username == )
-                }
+                
                 if($username == "max" && $password == "max"){
                     // rediriger l'utilisateur vers une autre page
                     header("Location: secret.html");
