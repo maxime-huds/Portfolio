@@ -9,6 +9,7 @@
     <body>
         <div class="login">
             <?php
+            session_start();
             
             try{
                     $pdo=(new PDO('mysql:host=localhost;charset=utf8;dbname=logs','root',''));
@@ -21,6 +22,7 @@
                 // récupérer les valeurs du formulaire
                 $username = $_POST['username'];
                 $password = $_POST['password'];
+                $_SESSION['login'] = $username;
 
                 // vérifier si le nom d'utilisateur et le mot de passe sont corrects
                 

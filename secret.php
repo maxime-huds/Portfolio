@@ -50,16 +50,27 @@
 
 
 <?php
-/*
+$expire = 300;
+session_set_cookie_params($expire);
 session_start();
 
-if(!isset($_SESSION['ID'])) {
-  header("Location: login-secret.php");
-  exit();
-}
 
-// Code pour afficher le contenu de la page pour les utilisateurs connectés
-*/
+
+if (!isset($_SESSION['login'])) {
+
+    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > $expire)) {
+        // Si la session a expiré, détruit toutes les variables de session et redirige l'utilisateur vers la page de connexion
+        session_unset();
+        session_destroy();
+        header('Location: login.php');
+        exit;
+    }
+
+
+    header('Location: login-secret.php'); // redirige l'utilisateur vers la page de connexion
+    exit;
+}
+$_SESSION['LAST_ACTIVITY'] = time();
 ?>
 
 
