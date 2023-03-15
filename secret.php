@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style-secret.css">
         <script src="java-secret.js" defer></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
     <body onload="startTimer()"> 
 
@@ -38,8 +39,10 @@
                 }
             }
             </script>
+            
         </div>
             
+        
 
         <div class="glitch">
             <div class="glitch__img"></div>
